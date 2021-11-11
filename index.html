@@ -18,7 +18,7 @@
         crossorigin=""
     ></script>
   </script>
-  
+   
     <script type="text/javascript" src="./js/leaflet-side-by-side.js"></script>
     <script type="text/javascript" src="./data/boundariesfire_clipped_1984_2002_dissolved.geojson"></script>
     <script type="text/javascript" src="./data/boundariesfire_clipped_2003_2019_dissolved.geojson"></script>
@@ -46,7 +46,7 @@
         map.createPane('right');
 
        
-       var stamenUrl = 'http://{s}.tile.stamen.com/toner-lite/{z}/{x}/{y}.png';
+       var stamenUrl = 'https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png';
       var stamenAttribution = 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.';
       var stamenLayer = new L.TileLayer(stamenUrl, {maxZoom: 15, attribution: stamenAttribution});
         
