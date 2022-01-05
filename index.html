@@ -70,10 +70,26 @@
      var LRight = L.geoJSON(right, {
         style:myStyle2,
         pame: 'right'}).addTo(map);
-     
+		
+		
         
      L.control.sideBySide(LLeft,LRight).addTo(map);
-            
+     
+	 LLeft.bindPopup("Burned Areas, 1984-2002");
+        LLeft.on('mouseclick', function (e) {
+            this.openPopup();
+        });
+        LLeft.on('mouseout', function (e) {
+            this.closePopup();
+        });
+		
+	LRight.bindPopup("Burned Areas, 2003-2019");
+        LRight.on('mouseclick', function (e) {
+            this.openPopup();
+        });
+        LRight.on('mouseout', function (e) {
+            this.closePopup();
+        });
         </script>
     </body>
 </html>
