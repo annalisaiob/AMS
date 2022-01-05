@@ -46,7 +46,7 @@
         map.createPane('right');
 
        
-       var stamenUrl = 'https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png';
+       var stamenUrl = 'https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png';
       var stamenAttribution = 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.';
       var stamenLayer = new L.TileLayer(stamenUrl, {attribution: stamenAttribution});
         
@@ -55,12 +55,12 @@
         var myStyle = {
         "color": "#ffe600",
         "weight": 2,
-        "opacity": 0.85,
+        "opacity": 0.95,
     };
         var myStyle2 = {
         "color": "#ff7800",
         "weight": 2,
-        "opacity": 0.85,
+        "opacity": 0.95,
     };
       // Add your two tile layers here
       //var myLayer = L.geoJSON().addTo(map);
